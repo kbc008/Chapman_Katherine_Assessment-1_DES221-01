@@ -1,0 +1,639 @@
+* {
+  box-sizing: border-box;
+}
+
+
+/*------------------text stylings----------------------*/
+body {
+  font-family: europa, sans-serif;
+  background-color: white;
+}
+
+.h1 {
+  font-size: 30px;
+  padding: 20px 20px 0px 20px;
+}
+
+.bio {
+  font-family: novecento-sans-condensed, sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  font-size: 40px;
+  padding: 40px 80px 80px 100px;
+  text-align: center;
+  background-color:white;
+}
+
+.bio2 {
+  font-family: novecento-sans-condensed, sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  font-size: 40px;
+  padding: 40px 80px 80px 100px;
+  text-align: center;
+  background-color:white;
+}
+
+.p1 {
+  text-align: left;
+  font-size: 18px;
+  padding: 0px 20px 20px 20px;
+}
+
+/*---------------intext link styling----------------------*/
+.intext-link {
+  overflow: hidden;
+  background-color:white;
+  padding: 10px;
+}
+
+.intext-link a {
+  float: center;
+  color: black;
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+  font-family: europa, sans-serif;
+  font-size: 22px;
+  line-height: 40px;
+  border-radius: 4px;
+}
+
+/* Change the background color on hover */
+.intext-link a:hover {
+  color: #ffd2b4;
+}
+
+/* Style the active/current link*/
+.intext-link a.active {
+  color: #ffd2b4;
+}
+
+/*---intext link 2---*/
+.intext-link2 {
+  overflow: hidden;
+  background-color:white;
+  padding: 0px;
+}
+
+.intext-link2 a {
+  float: left;
+  color: black;
+  text-align: left;
+  padding: 2px;
+  text-decoration: none;
+  font-family: europa, sans-serif;
+  font-size: 16px;
+  line-height: 40px;
+  border-radius: 4px;
+}
+
+/* Change the background color on hover */
+.intext-link2 a:hover {
+  color: #ffd2b4;
+}
+
+/* Style the active/current link*/
+.intext-link2 a.active {
+  color: #ffd2b4;
+}
+
+
+
+
+/*----------responsive image grid---------------------*/
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0px;
+}
+
+/* Create three equal columns that sit next to each other */
+.column {
+  flex: 33%;
+  max-width: 33%;
+  padding: 0px;
+}
+
+.column img {
+  margin-top: 20px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+/* -------------------------- Style the header section -------------------------- */
+
+/* Style the header with a grey background and some padding */
+.header {
+  overflow: hidden;
+  background-color:white;
+  padding: 20px 10px;
+}
+
+/* Style the header links */
+.header a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-family: europa, sans-serif;
+  font-size: 18px;
+  line-height: 80px;
+  border-radius: 4px;
+}
+
+/* Style the logo link */
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+/* Change the background color on hover */
+.header a:hover {
+  color: #ffd2b4;
+}
+
+/* Style the active/current link*/
+.header a.active {
+  color: #ffd2b4;
+}
+
+/* Float the link section to the right */
+.header-right {
+  float: right;
+}
+
+/* When the screen is 500px wide or less, stack the links on top of each other */
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .header-right {
+    float: none;
+  }
+}
+
+
+/* .header {
+  text-align: left;
+  padding: 0px;
+}
+
+.header p.name {
+  font-family: Copperplate, Garamond, serif;
+  font-size: 30px;
+  color: #485770;
+}
+
+.header p.tagline {
+  font-family: Garamond, serif;
+  font-size: 16px;
+  padding: 0px;
+}
+
+img.logo {
+  float: left;
+  width: 220px;
+}
+
+img.hero-image {
+  display: block;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: 10px;
+  width: 600px;
+} */
+
+
+
+/* --------------------Style the columns-----------------------*/
+* {
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column-left {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: none;
+  background-color: white;
+}
+
+/* .column-center {
+  float: left;
+  width: 33%;
+  padding: 20px;
+  height: none;
+  background-color: white;
+} */
+
+.column-right {
+  float: left;
+  width: 50%;
+  padding: 20px;
+  height: none;
+  background-color: white;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.row .column-left {
+  font-size: 18px;
+  padding: 20px 10px 40px 100px;
+  text-align: center;
+}
+
+/* .row .column-center {
+  padding: 100px 4px;
+  text-align: right;
+} */
+
+.row .column-right {
+  font-size: 18px;
+  padding: 20px 100px 20px 80px;
+  text-align: center;
+}
+
+
+
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column-left {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .column-right {
+    width: 100%;
+  }
+}
+
+
+
+
+/* ---------------------------- Grid Containers ---------------------- */
+
+/*---make text appear when mouse hovers over a picture----*/
+
+/*--NOTE hover over pictures only worked on 1st photo - once added to other photos, the photos overlapped - code saved here for later--*/
+
+/* Parent Container */
+/* .content_img{
+  position:relative;
+  width: 200px;
+  height: 200px;
+  float: left;
+  margin-right: 10px;
+ } */
+ 
+ /* Child Text Container */
+ /* .content_img div{
+  position:absolute;
+  top: 10px;
+  left: 10px;
+  background: #ffd2b4;
+  color: white;
+  margin-bottom: 5px;
+  font-family: europa, sans-serif;
+  font-size: 20px;
+  text-align: center;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: visibility 0s, opacity 0.5s linear; 
+  transition: visibility 0s, opacity 0.5s linear;
+ } */
+ 
+ /* Hover on Parent Container */
+ /* .content_img:hover{
+  cursor: pointer;
+ }
+ 
+ .content_img:hover div{
+  width: 150px;
+  padding: 8px 15px;
+  visibility: visible;
+  opacity: 0.9; 
+ } */
+
+
+/* Style grid containter */
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  gap: 1px 4px;
+  grid-template-areas:
+    ". ."
+    ". ."
+    ". ."
+    ". ."
+    ". .";
+}
+
+/* Create responsive layout */
+.grid-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-gap: 1rem;
+}
+
+
+/* Style grid containter */
+.grid-container1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 1px 3px;
+  grid-template-areas:
+    ". .";
+}
+
+/* Create responsive layout */
+.grid-container1 {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-gap: 1rem;
+}
+
+
+/*--------------Columns from original pirate website-------------------------------------*/
+/* Create three unequal columns that float next to each other */
+.column {
+  float: left;
+  padding: 10px;
+  /*height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Left and right column */
+.column.side {
+  width: 300px;
+
+}
+
+/* Middle column */
+.column.middle {
+  width: 500px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*------------------Image gallery from original pirate website------------------------*/
+/* Image gallery styles */
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+  text-align: center;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+div.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+
+/*------------------------------------------Blog-------------------------------*/
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {
+  float: left;
+  width: 75%;
+  padding-left: 80px;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+  padding-right: 80px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color:aliceblue;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/*-------------------------Contact form-------------------------------------*/
+.mycontact {
+  text-align: left;
+}
+
+
+/* Style inputs */
+input[type=text], select, textarea {
+  font-family: europa, sans-serif;
+  width: 100%; 
+  padding: 12px; 
+  border: 0px solid #ffd2b4; 
+  border-radius: 4px;
+  box-sizing: border-box; 
+  margin-top: 6px; 
+  margin-bottom: 16px; 
+  resize: vertical 
+}
+
+/* Style the submit button*/
+input[type=submit] {
+  background-color: #ffd2b4;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: europa, sans-serif;
+}
+
+/* moving the mouse over the submit button */
+input[type=submit]:hover {
+  background-color: white;
+  color: black;
+  font-family: europa, sans-serif;
+}
+
+/* background color and padding around form */
+.container {
+  border-radius: 5px;
+  background-color: aliceblue;
+  padding: 60px;
+  font-family: europa, sans-serif;
+  text-align: left;
+
+}
+
+
+
+/* ---------------------------------- Footer --------------------------------- */
+
+/* Style the footer */
+.footer {
+  background-color: white;
+  overflow: hidden;
+  clear: left;
+  color: black;
+  text-align: left;
+  padding: 40px 16px 10px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+
+/* unvisited link */
+.footer a:link {
+  color: black;
+  text-decoration: none;
+  background-color: none;
+}
+
+/* visited link */
+.footer a:visited {
+  color: black;
+  text-decoration: none;
+  background-color: none;
+}
+
+/* mouse over link */
+.footer a:hover {
+  color: #ffd2b4;
+  text-decoration: none;
+  background-color: none;
+}
+
+/* selected link */
+.footer a:active {
+  color: none;
+  text-decoration: none;
+  background-color: none;
+}
+
+/* Float the link section to the right */
+.footer-right {
+  float: right;
+}
+
+/* Style all font awesome icons */
+.fa {
+  padding: 0px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  color: #ffd2b4;
+  /* opacity: 0.7; */
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+  background: white;
+  color: black;
+}
+
+/* Instagram */
+.fa-instagram {
+  background: white;
+  color: black;
+}
+
+/* Twitter */
+.fa-twitter {
+  background: white;
+  color: black;
+}
+
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+/*@media (max-width: 600px) {
+  .column.side, .column.middle {
+    width: 100%;
+  }*/
+}
